@@ -1,0 +1,82 @@
+[
+    {
+        "team" : "Red Bull",
+        "teamimg": "",
+        "driver1": "Max Verstappen",
+        "driver1img": "",
+        "driver2": "Sergio Pérez",
+        "driver2img": ""
+    },
+    {
+        "team" : "Ferrari",
+        "teamimg": "",
+        "driver1": "Charles Leclerc",
+        "driver1img": "",
+        "driver2": "Carlos Sainz",
+        "driver2img": ""
+    },
+    {
+        "team" : "Mercedes",
+        "teamimg": "",
+        "driver1": "Lewis Hamilton",
+        "driver1img": "",
+        "driver2": "George Russell",
+        "driver2img": ""
+    },
+    {
+        "team" : "McLaren",
+        "teamimg": "",
+        "driver1": "Lando Norris",
+        "driver1img": "",
+        "driver2": "Daniel Ricciardo",
+        "driver2img": ""
+    },
+    {
+        "team" : "Alfa Romeo",
+        "teamimg": "",
+        "driver1": "Valtteri Bottas",
+        "driver1img": "",
+        "driver2": "Guanyu Zhou",
+        "driver2img": ""
+    },
+    {
+        "team" : "AlphaTauri",
+        "teamimg": "",
+        "driver1": "Yuki Tsunoda",
+        "driver1img": "",
+        "driver2": "Pierre Gasly",
+        "driver2img": ""
+    },
+    {
+        "team" : "Alpine",
+        "teamimg": "",
+        "driver1": "Fernando Alonso",
+        "driver1img": "",
+        "driver2": "Esteban Ocon",
+        "driver2img": ""
+    },
+    {
+        "team" : "Williams",
+        "teamimg": "",
+        "driver1": "Alexander Albon",
+        "driver1img": "",
+        "driver2": "Nicholas Latifi",
+        "driver2img": ""
+    },
+    {
+        "team" : "Haas",
+        "teamimg": "",
+        "driver1": "Kevin Magnussen",
+        "driver1img": "",
+        "driver2": "Mick Schumacher",
+        "driver2img": ""
+    },
+    {
+        "team" : "Aston Martin",
+        "teamimg": "",
+        "driver1": "Lance Stroll",
+        "driver1img": "",
+        "driver2": "Nico Hülkenberg",
+        "driver2img": ""
+    }
+]
