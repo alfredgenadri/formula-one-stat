@@ -8,7 +8,7 @@ const images = importAll(require.context('./imgs', false, /\.(png|jpe?g|svg)$/))
 
 const Articles = () => {
     return (  
-        <Tab.Container id="list-group-tabs-example" defaultActiveKey="#article1">
+        <Tab.Container id="list-group-tabs-example" defaultActiveKey="#article1" className="gx-4">
         <Row>
             <Col sm={6}>
             <ListGroup>

@@ -1,5 +1,6 @@
 import teams from './teams.json'
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import './Drivers.css'
 
 function importAll(r) {
     let images = {};
@@ -10,26 +11,23 @@ const images = importAll(require.context('./imgs', false, /\.(png|jpe?g|svg)$/))
 
 const Drivers = () => {
 
-    return (  
-        <Row xs={2} md={3} className="g-4">
+    return ( 
+        <Container className="align-items-center">
+            <Row xs={2} md={3} className="gy-4">
         {teams.map((team, idx) => (
-            <Col>
-            <Card>
+            <Col >
+            <Card style={{backgroundColor:team.teamcolor}}>
+            <Card.Title><img src={images[team.teamimg]} className="team-logo"></img></Card.Title>
                 <Row>
-                    <Col><Card.Img src={images['hamilton.png']} /></Col>
-                    <Col><Card.Img src={images['hamilton.png']} /></Col>
+                    <Col><Card.Img src={images[team.driver1img]} /></Col>
+                    <Col><Card.Img src={images[team.driver2img]} /></Col>
                 </Row>
-                <Card.Body>
-                <Card.Title>{team.team}</Card.Title>
-                <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit longer.
-                </Card.Text>
-                </Card.Body>
             </Card>
             </Col>
         ))}
         </Row>
+
+        </Container> 
     );
 }
  

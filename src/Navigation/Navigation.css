@@ -1,3 +1,8 @@
-.colorTheeme {
-    color: #e10600;
+.color-nav {
+    background-color: rgb(225, 6, 0);
+}
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    color: white !important;
 }
