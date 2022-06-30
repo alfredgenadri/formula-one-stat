@@ -24,3 +24,19 @@
     top: 30%; left: 50%;
     transform: translate(-50%,-50%);
 }
+
+.action-button {
+    background-color: rgb(225, 6, 0);
+    border-color: white;
+    position: absolute;
+}
+
+.button-download-app {
+    top: 70%; left: 58%;
+    transform: translate(-50%,-50%);
+}
+
+.button-sign-up {
+    top: 70%; left: 42%;
+    transform: translate(-50%,-50%);
+}

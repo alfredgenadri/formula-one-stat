@@ -15,7 +15,7 @@ const Drivers = () => {
         <Container className="align-items-center">
             <Row xs={2} md={3} className="gy-4">
         {teams.map((team, idx) => (
-            <Col >
+            <Col>
             <Card style={{backgroundColor:team.teamcolor}}>
             <Card.Title><img src={images[team.teamimg]} className="team-logo"></img></Card.Title>
                 <Row>

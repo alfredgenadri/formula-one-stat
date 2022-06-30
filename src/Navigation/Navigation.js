@@ -1,6 +1,7 @@
 
 import {Navbar, Nav, Container} from 'react-bootstrap'
 import './Navigation.css'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function importAll(r) {
     let images = {};
@@ -25,9 +26,9 @@ const Navigation = () => {
                         
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home" className='nav-link'>Teams & Drivers</Nav.Link>
-                        <Nav.Link href="#features" className='nav-link'>Latest News</Nav.Link>
-                        <Nav.Link href="#pricing" className='nav-link'>Pricing</Nav.Link>
+                        <Nav.Link href="home" className='nav-link'>Teams & Drivers</Nav.Link>
+                        <Nav.Link href="articles" className='nav-link'>Latest News</Nav.Link>
+                        <Nav.Link href="calendar" className='nav-link'>Calendar</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap';
 import logo from './imgs/logo.png'
 import './Main.css'
 
@@ -12,6 +13,8 @@ const Main = () => {
                 className="hook"
                 />
             <h1 className='grab'>THE OFFICIAL FORMULA ONE STAT TRACKER</h1>
+            <Button className='button-sign-up action-button' size="lg">Sign Up Now</Button>
+            <Button className='button-download-app action-button' size="lg">Download our Mobile App</Button>
       </div>
     );
 }
