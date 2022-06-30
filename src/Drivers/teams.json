@@ -4,17 +4,21 @@
         "teamimg": "redbull.png",
         "teamcolor": "#15185E",
         "driver1": "Max Verstappen",
+        "driver1name": "verstappen",
         "driver1img": "verstappen.png",
         "driver2": "Sergio Pérez",
-        "driver2img": "perez.png"
+        "driver2img": "perez.png",
+        "driver2name": "perez"
     },
     {
         "team" : "Ferrari",
         "teamimg": "ferrari.png",
         "teamcolor": "#FE0100",
         "driver1": "Charles Leclerc",
+        "driver1name": "leclerc",
         "driver1img": "leclerc.png",
         "driver2": "Carlos Sainz",
+        "driver2name": "sainz",
         "driver2img": "sainz.png"
     },
     {
@@ -22,8 +26,10 @@
         "teamimg": "mercedes.png",
         "teamcolor": "#6CAEA9",
         "driver1": "Lewis Hamilton",
+        "driver1name": "hamilton",
         "driver1img": "hamilton.png",
         "driver2": "George Russell",
+        "driver2name": "russell",
         "driver2img": "russell.png"
     },
     {
@@ -31,8 +37,10 @@
         "teamimg": "mclaren.png",
         "teamcolor": "#FF8700",
         "driver1": "Lando Norris",
+        "driver1name": "norris",
         "driver1img": "norris.png",
         "driver2": "Daniel Ricciardo",
+        "driver2name": "ricciardo",
         "driver2img": "ricciardo.png"
     },
     {
@@ -40,8 +48,10 @@
         "teamimg": "alfaromeo.png",
         "teamcolor": "#9A0000",
         "driver1": "Valtteri Bottas",
+        "driver1name": "bottas",
         "driver1img": "bottas.png",
         "driver2": "Guanyu Zhou",
+        "driver2name": "zhou",
         "driver2img": "zhou.png"
     },
     {
@@ -49,8 +59,10 @@
         "teamimg": "alphatauri.png",
         "teamcolor": "#272850",
         "driver1": "Yuki Tsunoda",
+        "driver1name": "tsunoda",
         "driver1img": "tsunoda.png",
         "driver2": "Pierre Gasly",
+        "driver2name": "gasly",
         "driver2img": "gasly.png"
     },
     {
@@ -58,8 +70,10 @@
         "teamimg": "alpine.png",
         "teamcolor": "#0F1D2B",
         "driver1": "Fernando Alonso",
+        "driver1name": "alonso",
         "driver1img": "alonso.png",
         "driver2": "Esteban Ocon",
+        "driver2name": "ocon",
         "driver2img": "ocon.png"
     },
     {
@@ -67,8 +81,10 @@
         "teamimg": "williams.png",
         "teamcolor": "#00A0DF",
         "driver1": "Alexander Albon",
+        "driver1name": "albon",
         "driver1img": "albon.png",
         "driver2": "Nicholas Latifi",
+        "driver2name": "latifi",
         "driver2img": "latifi.png"
     },
     {
@@ -76,8 +92,10 @@
         "teamimg": "astonmartin.png",
         "teamcolor": "#02574F",
         "driver1": "Lance Stroll",
+        "driver1name": "stroll",
         "driver1img": "stroll.png",
         "driver2": "Sebastian Vettel",
+        "driver2name": "vettel",
         "driver2img": "vettel.png"
     }
 ]

@@ -16,11 +16,13 @@ const Drivers = () => {
             <Row xs={2} md={3} className="gy-4">
         {teams.map((team, idx) => (
             <Col>
+            
             <Card style={{backgroundColor:team.teamcolor}}>
             <Card.Title><img src={images[team.teamimg]} className="team-logo"></img></Card.Title>
                 <Row>
-                    <Col><Card.Img src={images[team.driver1img]} /></Col>
-                    <Col><Card.Img src={images[team.driver2img]} /></Col>
+
+                    <Col><a href={team.driver1name}><Card.Img src={images[team.driver1img]} /></a></Col>
+                    <Col><a href={team.driver2name}><Card.Img src={images[team.driver2img]} /></a></Col>
                 </Row>
             </Card>
             </Col>

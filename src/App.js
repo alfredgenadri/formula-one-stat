@@ -6,6 +6,7 @@ import Articles from './Articles/Articles';
 import Article from './Articles/Article';
 import Forums from './Forums/Discussion';
 import Calendar from './Calendar/Calendar';
+import Driver from './Drivers/Driver';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/" component={Main} />
       <Route path="/calendar" component={Calendar} />
       <Route path="/article1" component={Article} />
+      <Route path="/verstappen" component={Driver} />
     </div>
   </Router>
 
