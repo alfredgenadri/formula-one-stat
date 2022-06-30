@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/formula-one-stat/static/css/main.140e53a3.css",
-    "main.js": "/formula-one-stat/static/js/main.487659d5.js",
+    "main.js": "/formula-one-stat/static/js/main.e3fb2192.js",
     "static/media/article3.jpg": "/formula-one-stat/static/media/article3.90b4123c9bd00a293e56.jpg",
     "static/media/article1img2.jpg": "/formula-one-stat/static/media/article1img2.abb751cbdf500627222a.jpg",
     "static/media/article5.jpg": "/formula-one-stat/static/media/article5.ff890e1314eebe4bb288.jpg",
@@ -23,10 +23,10 @@
     "index.html": "/formula-one-stat/index.html",
     "static/media/svg": "/formula-one-stat/static/media/2a0bc34f2fdf6d6b.6e0f8a48a90f41998086.svg",
     "main.140e53a3.css.map": "/formula-one-stat/static/css/main.140e53a3.css.map",
-    "main.487659d5.js.map": "/formula-one-stat/static/js/main.487659d5.js.map"
+    "main.e3fb2192.js.map": "/formula-one-stat/static/js/main.e3fb2192.js.map"
   },
   "entrypoints": [
     "static/css/main.140e53a3.css",
-    "static/js/main.487659d5.js"
+    "static/js/main.e3fb2192.js"
   ]
 }
