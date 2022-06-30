@@ -44,6 +44,24 @@ function App() {
 
       <Articles></Articles>
 
+      <hr  style={{
+        color: '#000000',
+        backgroundColor: '#000000',
+        height: 10,
+        borderColor : '#000000'
+      }}/>
+
+      <Article></Article>
+
+      <hr  style={{
+        color: '#000000',
+        backgroundColor: '#000000',
+        height: 10,
+        borderColor : '#000000'
+      }}/>
+
+      <Calendar></Calendar>
+
       
 
     </div>
