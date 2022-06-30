@@ -19,6 +19,7 @@ const Drivers = () => {
             
             <Card style={{backgroundColor:team.teamcolor}}>
             <Card.Title><img src={images[team.teamimg]} className="team-logo"></img></Card.Title>
+            <Card.Title style={{color:'white'}} className='text-center'>{team.team}</Card.Title>
                 <Row>
 
                     <Col><a href={team.driver1name}><Card.Img src={images[team.driver1img]} /></a></Col>
