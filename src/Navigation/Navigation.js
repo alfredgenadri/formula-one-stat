@@ -15,7 +15,7 @@ const Navigation = () => {
          
             <Navbar className="color-nav" variant="light">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand>
                     <img
                         alt=""
                         src={images['logo.png']}
@@ -26,9 +26,9 @@ const Navigation = () => {
                         
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="home" className='nav-link'>Teams & Drivers</Nav.Link>
-                        <Nav.Link href="articles" className='nav-link'>Latest News</Nav.Link>
-                        <Nav.Link href="calendar" className='nav-link'>Calendar</Nav.Link>
+                        <Nav.Link className='nav-link'>Teams & Drivers</Nav.Link>
+                        <Nav.Link className='nav-link'>Latest News</Nav.Link>
+                        <Nav.Link className='nav-link'>Calendar</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

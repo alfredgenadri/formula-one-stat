@@ -1,0 +1,41 @@
+
+.driver-number {
+    text-align: left;
+    font-weight: 500;
+    font-size: 72px;
+    font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    position: relative;
+    bottom: -100px;
+    left: -100px;
+}
+
+.driver-name {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 41px;
+    font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    writing-mode: inherit;
+    position: relative;
+    bottom: -70px;
+    left: -100px;
+    
+}
+
+.driver-image {
+    height: 400px;
+}
+
+.bg-color {
+    background-color: rgb(225, 6, 0);
+}
+
+.logo {
+    width: 400px;
+    height: 200px;
+}

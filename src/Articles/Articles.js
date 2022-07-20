@@ -17,7 +17,7 @@ const Articles = () => {
             <Row className="border justify-content-center mb-4">
                 <Col className="py-2 col-5">
                     <div className="article-preview">
-                        <a href="/article1"><h4>Mercedes: Zero complacency over F1 2022 100% finishing record</h4></a>
+                        <h4>Mercedes: Zero complacency over F1 2022 100% finishing record</h4>
                         <p>Mercedes insists it is not getting complacent about its finishing record in Formula 1 this year, despite rivals Red Bull and Ferrari having big reliability headaches.</p>
                     </div>
                 </Col>

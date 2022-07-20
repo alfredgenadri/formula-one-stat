@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Navigation from './Navigation/Navigation';
 import Main from './Navigation/Main'
 import Drivers from './Drivers/Drivers';
@@ -7,65 +8,59 @@ import Article from './Articles/Article';
 import Forums from './Forums/Discussion';
 import Calendar from './Calendar/Calendar';
 import Driver from './Drivers/Driver';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import teams from './Drivers/teams.json'
 
-function App() {
+import SignUp from './Navigation/SignUp';
+import Login from './Navigation/Login';
+
+import { BrowserRouter as Router, Switch, Route, useParams} from "react-router-dom";
+import LoginSignUpModal from './Navigation/LoginSignUpModal';
+
+function driver_names() {
+  var drivers = "(";
+  for (var i = 0; i < teams.length; i++) {
+    drivers += teams[i].driver1_name + "|" + teams[i].driver2_name + "|";
+  }
+  return drivers.slice(0, -1) + ")";
+}
+
+export default function App() {
   return (
 
     <div>
+      <Navigation />
 
-<Router>
-    <div>
-      <Route exact path="/" component={Main} />
-      <Route path="/calendar" component={Calendar} />
-      <Route path="/article1" component={Article} />
-      <Route path="/verstappen" component={Driver} />
-    </div>
-  </Router>
+      <Router>
+        <Switch>
+          
+          <Route exact path="/" >
+              <Main />
+          </Route>
 
-<Navigation></Navigation>
-      <Main></Main>
+          <Route path={"/drivers/:driver" + driver_names()}>
+            <Driver />
+          </Route>
 
-      <hr  style={{
-        color: '#000000',
-        backgroundColor: '#000000',
-        height: 10,
-        borderColor : '#000000'
-      }}/>
+          <Route path="/drivers">
+              <Drivers />
+          </Route>
 
-      <Drivers></Drivers>
+          <Route path="/articles">
+              <Articles />
+          </Route>
 
-      <hr  style={{
-        color: '#000000',
-        backgroundColor: '#000000',
-        height: 10,
-        borderColor : '#000000'
-      }}/>
+          <Route path="/login">
+              <LoginSignUpModal></LoginSignUpModal>
+          </Route>
 
-      <Articles></Articles>
+          <Route path="/signup">
+              
+          </Route>
 
-      <hr  style={{
-        color: '#000000',
-        backgroundColor: '#000000',
-        height: 10,
-        borderColor : '#000000'
-      }}/>
-
-      <Article></Article>
-
-      <hr  style={{
-        color: '#000000',
-        backgroundColor: '#000000',
-        height: 10,
-        borderColor : '#000000'
-      }}/>
-
-      <Calendar></Calendar>
-
+        </Switch>
+      </Router>
       
 
     </div>
   );
 }
-
-export default App;
