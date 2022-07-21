@@ -1,9 +1,17 @@
-import React, {useRef, useState} from "react";
-import Calendar from 'rc-year-calendar';
-import {Button, OverlayTrigger, Tooltip} from "react-bootstrap";
+import React from "react";
+import ReactDOM from "react-dom";
+import Calendar from "rc-year-calendar";
+import moment from "moment";
+import { Tooltip } from "react-bootstrap";
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css';
 
-const currentYear = "2022";
-const eventArray = [
+
+const currentYear = new Date().getFullYear();
+const date = new Date();
+console.log(date);
+
+const dataSource1 = [
     {
         id: 0,
         name: 'Canadian Grand Prix',
@@ -24,37 +32,81 @@ const eventArray = [
     }
 ]
 
+class MyCalendar extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      style: "background",
+      dataSource: dataSource1,
+      currentDay: new Date()
+    };
+  }
 
-const EventCalendar = () => {
-    const handleDayHover = (e) => {
-        if (e.events.length > 0) {
-            console.log(e.element.firstChild, e.element)
-            return (
-                <OverlayTrigger
-                    show={true}
-                    key="top"
-                    placement="top"
-                    overlay={
-                        <Tooltip id={`tooltip-top`}>
-                            Tooltip on <strong>top</strong>.
-                        </Tooltip>
-                    }
-                >
-                    {e.element.firstChild}
-                </OverlayTrigger>
-            )
-        }
+  customDayRenderer(element, date) {
+    if (date === new Date()) {
+      element.style.backgroundColor = "green";
     }
 
+    if (
+      moment(date).format("YYYYMMDD") ===
+      moment(this.state.currentDay).format("YYYYMMDD")
+    ) {
+      element.style.backgroundColor = "green";
+    }
+
+    element.style.backgroundColor = "green";
+    console.log(date);
+  }
+
+  handleDayEnter(e) {
+    if (e.events.length > 0) {
+      var content = "";
+
+      for (var i in e.events) {
+        content += e.events[i].name;
+        content += " in "
+        content += e.events[i].location
+      }
+
+      if (this.tooltip != null) {
+        this.tooltip.destroy();
+        this.tooltip = null;
+      }
+
+      this.tooltip = tippy(e.element, {
+        placement: "right",
+        content: content,
+        animateFill: false,
+        animation: "shift-away",
+        arrow: true
+      });
+      this.tooltip.show();
+    }
+  }
+
+  onDayClick = (d, e) => {
+    const lastDate = this.state.currentDay;
+    console.log(lastDate);
+    const date = d.date;
+    console.log(date);
+    this.setState({
+      currentDay: date
+    });
+  };
+
+  render() {
     return (
-        <React.Fragment>
-            <Calendar
-                dataSource={eventArray}
-                minDate={new Date("01-01-2019")}
-                onDayEnter={e => handleDayHover(e)}
-            />
-        </React.Fragment>
+      <div className="pt-4">
+        <Calendar
+          dataSource={this.state.dataSource}
+          style={{ style: "custom" }}
+          onDayEnter={(e) => this.handleDayEnter(e)}
+          onDayClick={this.onDayClick}
+          CustomDayRenderer={(element) => this.state.customDayRenderer(element)}
+        />
+      </div>
     );
+  }
 }
 
-export default EventCalendar;
+export default MyCalendar;

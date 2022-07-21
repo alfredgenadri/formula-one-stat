@@ -4,6 +4,7 @@ import stats from "./stats.json"
 import "./Driver.css"
 import {Container, Row, Col, Image} from 'react-bootstrap'
 import points from './points.jpeg'
+import DriverStats from "./DriverStats";
 
 function importAll(r) {
     let images = {};
@@ -77,7 +78,7 @@ export default function Driver(){
                 </Row>
         </Container>
 
-        <Container className="bg-color text-white">
+        {/* <Container className="bg-color text-white">
             <Row>
                 <Col className="pt-3" align="center">
                     <table style={{ border: "1px solid black " }}>
@@ -105,9 +106,186 @@ export default function Driver(){
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    <img src={points} height={1000} width={1000}></img>
+                
+            </Row>
+        </Container> */}
+
+        
+        {/* <Container className="">
+        <Row>
+            <Col md={3} className="ms-3 bg-color">
+                <Row className="pt-3 justify-content-center">
+                    <Col className="key ps-3" md={4}>
+                        Qualifying
+                    </Col>
+                    <Col className="value" md={4}>
+                        {driver_stats["Qualifying Streak"]}
+                    </Col>
+                </Row>
+                <Row className="pt-2">
+                    <Col className="key ps-3" md={4}>
+                        Race
+                    </Col>
+                    <Col className="value" md={4}>
+                        {driver_stats["Racing Streak"]}
+                    </Col>
+                </Row>
+                <Row className="pt-2">
+                    <Col className="key ps-3" md={4}>
+                        Price (mil)
+                    </Col>
+                    <Col className="value" md={4}>
+                        ${driver_stats["Price"]}
+                    </Col>
+                </Row>
+            </Col>
+            <Col md={{ span: 4, offset: 4 }}>{`md={{ span: 4, offset: 4 }}`}</Col>
+        </Row>
+        <Row>
+            <Col md={{ span: 3, offset: 3 }}>{`md={{ span: 3, offset: 3 }}`}</Col>
+            <Col md={{ span: 3, offset: 3 }}>{`md={{ span: 3, offset: 3 }}`}</Col>
+        </Row>
+        <Row>
+            <Col md={{ span: 6, offset: 3 }}>{`md={{ span: 6, offset: 3 }}`}</Col>
+        </Row>
+        </Container> */}
+
+        <Container>
+            <Row className="p-5 justify-content-md-center white" >
+                <Col md={4} className="bg-color">
+                    <Row className="pt-3 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Qualifying Streak
+                        </Col>
+                        <Col className="value ps-5" md={4}>
+                            {driver_stats["Qualifying Streak"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Racing Streak
+                        </Col>
+                        <Col className="value ps-5" md={4}>
+                            {driver_stats["Racing Streak"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Highest Race Finish
+                        </Col>
+                        <Col className="value ps-5" md={4}>
+                            {driver_stats["Highest Race Finish"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            World Championships
+                        </Col>
+                        <Col className="value ps-5" md={4}>
+                            {driver_stats["World Championships"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 pb-3 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Global Podiums
+                        </Col>
+                        <Col className="value ps-5" md={4}>
+                            {driver_stats["Podiums"]}
+                        </Col>
+                    </Row>
                 </Col>
+                <Col md={4} className="bg-color">
+                    <Row className="pt-3 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Overtakes
+                        </Col>
+                        <Col className="value" md={4}>
+                            {driver_stats["Overtakes"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            DNFs
+                        </Col>
+                        <Col className="value" md={4}>
+                            {driver_stats["DNFs"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Beat Teammate Rate
+                        </Col>
+                        <Col className="value" md={4}>
+                            {driver_stats["Beat Teammate Rate"] * 100}%
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Top 5 Scorer
+                        </Col>
+                        <Col className="value" md={4}>
+                            {Math.floor(driver_stats["Top 5 Scorer"] * 100)}%
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Grand Prix Entries
+                        </Col>
+                        <Col className="value" md={4}>
+                            {driver_stats["Grands Prix Entered"]}
+                        </Col>
+                    </Row>
+                </Col>
+                <Col md={1}></Col>
+                <Col className="bg-color" md={3}>
+                <Row className="pt-3 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            DOB
+                        </Col>
+                        <Col className="value" md={4}>
+                            {driver_stats["Date of Birth"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            POB
+                        </Col>
+                        <Col className="value" md={4}>
+                            {driver_stats["Place of Birth"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Global Wins
+                        </Col>
+                        <Col className="value" md={4}>
+                            {driver_stats["Wins"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Global Points
+                        </Col>
+                        <Col className="value" md={4}>
+                            {driver_stats["Points"]}
+                        </Col>
+                    </Row>
+                    <Row className="pt-2 justify-content-center align-items-center">
+                        <Col className="key ps-3" md={4}>
+                            Price (mil)
+                        </Col>
+                        <Col className="value" md={4}>
+                            ${driver_stats["Price"]}
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+            <Row className="ps-5 pe-5 justify-content-md-center">
+                
+                <Col md={12}>
+                    <DriverStats />
+                </Col>
+                
             </Row>
         </Container>
 

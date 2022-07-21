@@ -7,8 +7,8 @@ const Discussion = () => {
     {
       userId: '02b',
       comId: '017',
-      fullName: 'Lily',
-      userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
+      fullName: 'Josh',
+      userProfile: '',
       text: 'I think you have a point🤔',
       avatarUrl: 'https://ui-avatars.com/api/name=Lily&background=random',
       replies: []
@@ -16,16 +16,12 @@ const Discussion = () => {
   ]
   return <CommentSection
         currentUser={{
-          currentUserId: '01a',
+          currentUserId: '',
           currentUserImg:
-            'https://ui-avatars.com/api/name=Riya&background=random',
+            '',
           currentUserProfile:
-            'https://www.linkedin.com/in/riya-negi-8879631a9/',
-          currentUserFullName: 'Riya Negi'
-        }}
-        logIn={{
-          loginLink: 'http://localhost:3001/',
-          signupLink: 'http://localhost:3001/'
+            '',
+          currentUserFullName: 'Strange'
         }}
         commentData={data}
       />

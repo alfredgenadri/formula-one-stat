@@ -8,7 +8,7 @@ import { Button, Modal, Form, Input, Radio } from 'antd';
 import "antd/dist/antd.css";
 
 
-class LoginSignUpModal extends React.Component {
+class LoginModal extends React.Component {
 
   
   render(){
@@ -80,8 +80,7 @@ class LoginSignUpModal extends React.Component {
       
         return (
           <div>
-            <Button
-              type="primary"
+            <Button 
               onClick={() => {
                 setVisible(true);
               }}
@@ -99,13 +98,11 @@ class LoginSignUpModal extends React.Component {
         );
       };
   return (
-    <div className="MainDiv">
-      <div className="container">
+    <div className="main-div-login">
       <CollectionsPage />
-        </div>
       </div>
   );
 }
 
 }
-export default LoginSignUpModal;
+export default LoginModal;

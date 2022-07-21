@@ -4,17 +4,19 @@ import Navigation from './Navigation/Navigation';
 import Main from './Navigation/Main'
 import Drivers from './Drivers/Drivers';
 import Articles from './Articles/Articles';
-import Article from './Articles/Article';
 import Forums from './Forums/Discussion';
-import Calendar from './Calendar/Calendar';
 import Driver from './Drivers/Driver';
 import teams from './Drivers/teams.json'
 
-import SignUp from './Navigation/SignUp';
-import Login from './Navigation/Login';
-
 import { BrowserRouter as Router, Switch, Route, useParams} from "react-router-dom";
-import LoginSignUpModal from './Navigation/LoginSignUpModal';
+import LoginModal from './Navigation/LoginModal';
+
+import React, { useState, Fragment } from 'react';
+import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
+import MyCalendar from './Calendar/Calendar';
+import RegisterForm from './Navigation/RegisterForm';
+import FAQ from './Forums/FAQ';
+import Game from './Game/Game';
 
 function driver_names() {
   var drivers = "(";
@@ -25,12 +27,13 @@ function driver_names() {
 }
 
 export default function App() {
+
   return (
 
     <div>
-      <Navigation />
-
-      <Router>
+      
+      <Router forceRefresh={true}>
+        <Navigation />
         <Switch>
           
           <Route exact path="/" >
@@ -41,7 +44,7 @@ export default function App() {
             <Driver />
           </Route>
 
-          <Route path="/drivers">
+          <Route path="/drivers" exact={true}>
               <Drivers />
           </Route>
 
@@ -49,12 +52,20 @@ export default function App() {
               <Articles />
           </Route>
 
-          <Route path="/login">
-              <LoginSignUpModal></LoginSignUpModal>
+          <Route path="/register">
+              <RegisterForm />
           </Route>
 
-          <Route path="/signup">
-              
+          <Route path="/calendar">
+            <MyCalendar />
+          </Route>
+
+          <Route path="/faq">
+            <FAQ />
+          </Route>
+
+          <Route path="/game">
+            <Game />
           </Route>
 
         </Switch>
