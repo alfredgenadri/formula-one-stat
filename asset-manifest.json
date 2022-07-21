@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/formula-one-stat/static/css/main.56824a6a.css",
-    "main.js": "/formula-one-stat/static/js/main.cf8e279c.js",
+    "main.css": "/formula-one-stat/static/css/main.68044e89.css",
+    "main.js": "/formula-one-stat/static/js/main.e2c7380d.js",
+    "static/media/verstappen-stats.png": "/formula-one-stat/static/media/verstappen-stats.2892cef0cb910805293b.png",
     "static/media/mercedes-logo.png": "/formula-one-stat/static/media/mercedes-logo.54cfdb7ccde72acd9e5d.png",
     "static/media/hamilton-stats.png": "/formula-one-stat/static/media/hamilton-stats.66436199bf38b8d0faf2.png",
     "static/media/hamilton-car.jpeg": "/formula-one-stat/static/media/hamilton-car.be20033ee9e22a0fc3e3.jpeg",
@@ -11,8 +12,10 @@
     "static/media/article5.jpg": "/formula-one-stat/static/media/article5.ff890e1314eebe4bb288.jpg",
     "static/media/ferrari-main.jpg": "/formula-one-stat/static/media/ferrari-main.f742721f3bc8779ed181.jpg",
     "static/media/article2.jpg": "/formula-one-stat/static/media/article2.4f8f0a7acbe549d29aff.jpg",
+    "static/media/redbull-logo.png": "/formula-one-stat/static/media/redbull-logo.a1123288775f9ed36316.png",
     "static/media/article1.jpg": "/formula-one-stat/static/media/article1.b296d508319eae8a59cf.jpg",
     "static/media/article4.jpg": "/formula-one-stat/static/media/article4.2b0f47b91afa0e336c6f.jpg",
+    "static/media/profile-pic.png": "/formula-one-stat/static/media/profile-pic.a9136072d073801df253.png",
     "static/media/zhou.png": "/formula-one-stat/static/media/zhou.9f09c0acb018206d1ca9.png",
     "static/media/logo.png": "/formula-one-stat/static/media/logo.8bbde8bf691368aac370.png",
     "static/media/vettel.png": "/formula-one-stat/static/media/vettel.0ee3b0c22133edea1137.png",
@@ -26,11 +29,11 @@
     "static/media/gasly.png": "/formula-one-stat/static/media/gasly.c09c9cf935113a1225a6.png",
     "index.html": "/formula-one-stat/index.html",
     "static/media/svg": "/formula-one-stat/static/media/2a0bc34f2fdf6d6b.6e0f8a48a90f41998086.svg",
-    "main.56824a6a.css.map": "/formula-one-stat/static/css/main.56824a6a.css.map",
-    "main.cf8e279c.js.map": "/formula-one-stat/static/js/main.cf8e279c.js.map"
+    "main.68044e89.css.map": "/formula-one-stat/static/css/main.68044e89.css.map",
+    "main.e2c7380d.js.map": "/formula-one-stat/static/js/main.e2c7380d.js.map"
   },
   "entrypoints": [
-    "static/css/main.56824a6a.css",
-    "static/js/main.cf8e279c.js"
+    "static/css/main.68044e89.css",
+    "static/js/main.e2c7380d.js"
   ]
 }
