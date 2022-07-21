@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/formula-one-stat/static/css/main.56824a6a.css",
-    "main.js": "/formula-one-stat/static/js/main.26f7801a.js",
+    "main.js": "/formula-one-stat/static/js/main.8b778cd6.js",
     "static/media/mercedes-logo.png": "/formula-one-stat/static/media/mercedes-logo.54cfdb7ccde72acd9e5d.png",
     "static/media/hamilton-stats.png": "/formula-one-stat/static/media/hamilton-stats.66436199bf38b8d0faf2.png",
     "static/media/hamilton-car.jpeg": "/formula-one-stat/static/media/hamilton-car.be20033ee9e22a0fc3e3.jpeg",
@@ -27,10 +27,10 @@
     "index.html": "/formula-one-stat/index.html",
     "static/media/svg": "/formula-one-stat/static/media/2a0bc34f2fdf6d6b.6e0f8a48a90f41998086.svg",
     "main.56824a6a.css.map": "/formula-one-stat/static/css/main.56824a6a.css.map",
-    "main.26f7801a.js.map": "/formula-one-stat/static/js/main.26f7801a.js.map"
+    "main.8b778cd6.js.map": "/formula-one-stat/static/js/main.8b778cd6.js.map"
   },
   "entrypoints": [
     "static/css/main.56824a6a.css",
-    "static/js/main.26f7801a.js"
+    "static/js/main.8b778cd6.js"
   ]
 }
