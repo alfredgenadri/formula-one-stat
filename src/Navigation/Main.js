@@ -3,6 +3,7 @@ import logo from './imgs/logo.png'
 import app from './f1app.jpeg'
 import store from './app-store-google-play.png'
 import './Main.css'
+import { Outlet } from 'react-router';
 
 const Main = () => {
     return (  
@@ -33,6 +34,7 @@ const Main = () => {
                     </Col>
                 </Row>
             </Container>
+            <Outlet />
         </div>
     );
 }

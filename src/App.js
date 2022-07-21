@@ -8,7 +8,7 @@ import Forums from './Forums/Discussion';
 import Driver from './Drivers/Driver';
 import teams from './Drivers/teams.json'
 
-import { BrowserRouter as Router, Switch, Route, useParams} from "react-router-dom";
+import { HashRouter as Router, Route, Routes} from "react-router-dom";
 import LoginModal from './Navigation/LoginModal';
 
 import React, { useState, Fragment } from 'react';
@@ -32,44 +32,35 @@ export default function App() {
 
     <div>
       
-      <Router forceRefresh={true} basename="/formula-one-stat">
+      <Router>
               
         <Navigation />
-        <Switch>
+        <Routes>
           
-          <Route exact path="/" >
-              <Main />
+          <Route exact path="/" element={<Main/>}></Route>
+
+          <Route path={"/drivers/:driver" + driver_names()} element={<Driver />}>
           </Route>
 
-          <Route path={"/drivers/:driver" + driver_names()}>
-            <Driver />
+          <Route path="/drivers" element={<Drivers/>}>
           </Route>
 
-          <Route path="/drivers" exact={true}>
-              <Drivers />
+          <Route path="/articles" element={<Articles/>}>
           </Route>
 
-          <Route path="/articles">
-              <Articles />
+          <Route path="/register" element={<RegisterForm/>}>
           </Route>
 
-          <Route path="/register">
-              <RegisterForm />
+          <Route path="/calendar" element={<MyCalendar/>}>
           </Route>
 
-          <Route path="/calendar">
-            <MyCalendar />
+          <Route path="/faq" element={<FAQ/>}>
           </Route>
 
-          <Route path="/faq">
-            <FAQ />
+          <Route path="/game" element={<Game/>}>
           </Route>
 
-          <Route path="/game">
-            <Game />
-          </Route>
-
-        </Switch>
+        </Routes>
       </Router>
       
 
