@@ -11,7 +11,7 @@
 }
 
 .background-color {
-    background-color: rgb(225, 6, 0);;
+    background-color: rgb(225, 6, 0);
 }
 
 .grab {
@@ -37,7 +37,7 @@
 
 .button-download-app {
     top: 70%; left: 58%;
-    transform: translate(-50%,-50%);
+    transform: translate(-90%,-50%);
 }
 
 .button-sign-up {

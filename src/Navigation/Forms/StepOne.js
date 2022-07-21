@@ -63,7 +63,7 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
                 ""
               )}
             </Form.Group>
-            <Button style={{display: "block", marginLeft: "auto", marginRight: "0"}} type="submit">
+            <Button aria-label='Move to next section' style={{display: "block", marginLeft: "auto", marginRight: "0"}} type="submit">
               Continue
             </Button>
           </Form>

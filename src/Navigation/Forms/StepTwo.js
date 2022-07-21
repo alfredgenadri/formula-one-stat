@@ -56,11 +56,11 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
               )}
             </Form.Group>
             <div style={{ display: "flex", justifyContent: "space-around" }}>
-              <Button variant="primary" onClick={prevStep}>
+              <Button aria-label='Go to previous section' variant="primary" onClick={prevStep}>
                 Previous
               </Button>
 
-              <Button style={{backgroundColor: "rgb(225, 6, 0)"}} type="submit">
+              <Button aria-label='Go to next section' style={{backgroundColor: "rgb(225, 6, 0)"}} type="submit">
                 Submit
               </Button>
             </div>

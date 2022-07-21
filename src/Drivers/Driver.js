@@ -52,6 +52,7 @@ export default function Driver(){
                 <Row className="justify-content-md-center">
                     <Col>
                         <img
+                            alt="driver-suit-picture"
                             src={images[driver_stats.Image]}
                             className="pt-5 driver-image pb-3"
                         />
@@ -64,11 +65,13 @@ export default function Driver(){
                     </Col>
                     <Col>
                     <img
+                        alt="driver-constructor-logo"
                         src={images[driver_stats["Team Image"]]}
                         className="pt-5 logo"
                         />
 
                     <img
+                        alt="driver-country-flag"
                         src={images[driver_stats["Country Image"]]}
                         className=" pt-5 pb-3 logo"
                         />
@@ -215,7 +218,7 @@ export default function Driver(){
                             Beat Teammate Rate
                         </Col>
                         <Col className="value" md={4}>
-                            {driver_stats["Beat Teammate Rate"] * 100}%
+                            {Math.floor(driver_stats["Beat Teammate Rate"] * 100)}%
                         </Col>
                     </Row>
                     <Row className="pt-2 justify-content-center align-items-center">

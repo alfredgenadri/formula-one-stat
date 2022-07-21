@@ -20,7 +20,7 @@ const Navigation = () => {
                     <Navbar.Brand>
                         <Link to="/">
                     <img
-                        alt=""
+                        alt="f1-logo"
                         src={images['logo.png']}
                         width="100"
                         height="50"
@@ -37,7 +37,7 @@ const Navigation = () => {
                         <Link to="/faq" className='nav-link'>FAQ</Link>
                     </Nav>
                     <Nav>
-                        <Button><Link to="/register">Register</Link></Button>
+                        <Button style={{transform: "translate(-10%,25%)", backgroundColor: "rgb(225, 6, 0)", color: "white"}}><Link to="/register">Register</Link></Button>
                         <Nav.Link to="/"><LoginModal /></Nav.Link>
                     </Nav>
                 </Container>

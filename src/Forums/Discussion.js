@@ -1,6 +1,7 @@
 import React from 'react'
 import { CommentSection} from 'react-comments-section'
 import 'react-comments-section/dist/index.css'
+import user from './profile-pic.png'
 
 const Discussion = () => {
   const data =[
@@ -16,12 +17,11 @@ const Discussion = () => {
   ]
   return <CommentSection
         currentUser={{
-          currentUserId: '',
+          currentUserId: 'under',
           currentUserImg:
-            '',
-          currentUserProfile:
-            '',
-          currentUserFullName: 'Strange'
+            {user},
+          currentUserProfile: "https://www.linkedin.com/in/alfred-genadri-3375651b9/",
+          currentUserFullName: 'Captain Underpants'
         }}
         commentData={data}
       />

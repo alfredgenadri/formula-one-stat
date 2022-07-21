@@ -10,27 +10,31 @@ const Main = () => {
         <div>
             <div className='background-image-main'>
                 <img
+                    alt="ferrari-f1-car"
                     src={logo}
                     width="200"
                     height="100"
                     className="hook"
                     />
                 <h1 className='grab'>THE OFFICIAL FORMULA ONE STAT TRACKER</h1>
-                <Button className='button-sign-up action-button' size="lg">Sign Up Now</Button>
-                <Button className='button-download-app action-button' size="lg">Download our Mobile App</Button>
+                <Button aria-label="Download App" className='button-download-app action-button' size="lg">Download our Mobile App</Button>
             </div>
             <Container className='background-color container'>
                 <Row>
                     <Col className='pt-2'>
-                        <img    
+                        <img  
+                            alt="mobile-phones"  
                             src={app}
                         />
                     </Col>
                     <Col className='pt-5'>
-                        <img    
+                        <a onClick={() => window.open("https://www.apple.com/ca/app-store/", '_blank')}>
+                        <img 
+                            alt="apple-store-google-play"
                             src={store}
                         />
-                        <h3 style={{color: "white"}}>Never Miss Any Updates!</h3>
+                        </a>
+                        <h3 style={{color: "white", fontFamily: "'Lexend', sans-serif", transform: "translate(10%,40%)"}} className="pt-4">Never Miss Any Updates!</h3>
                     </Col>
                 </Row>
             </Container>

@@ -52,7 +52,7 @@ class LoginModal extends React.Component {
                   },
                 ]}
               >
-                <Input />
+                <Input aria-label='Password Input' />
               </Form.Item>
               <Form.Item name="password" label="Password"
               rules={[
@@ -62,7 +62,7 @@ class LoginModal extends React.Component {
                 },
               ]}
               >
-                <Input type="password" />
+                <Input type="password" aria-label='Password Input'/>
               </Form.Item>
               
             </Form>
@@ -81,6 +81,8 @@ class LoginModal extends React.Component {
         return (
           <div>
             <Button 
+              aria-label='Login'
+              style={{backgroundColor: "rgb(225, 6, 0)", color: "white"}}
               onClick={() => {
                 setVisible(true);
               }}

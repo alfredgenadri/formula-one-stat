@@ -5,26 +5,26 @@ const data = {
     title: "Frequently Asked Questions (FAQ)",
     rows: [
       {
-        title: "Lorem ipsum dolor sit amet,",
-        content: "Lorem ipsum dolor sit amet, consectetur "
+        title: "How Fast is a Formula 1 Car?",
+        content: "Formula 1 cars can accelerate from 0 to 100 mph (160 kmph) and then decelerate back to zero in less than five (5) seconds. Most racers will reach a Formula 1 car top speed of around 300 kmph (185 mph). Note: Some cars have attained speeds around 400 kmph. But, the gears and aerodynamics configuration did not fully comply with F1 standards."
       },
       {
-        title: "Nunc maximus, magna at ultricies elementum",
+        title: "How much does a Formula 1 Car Cost?",
         content:
-          "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam. Und was ist, wenn der Satz länger ist ...? Geht es dann einfach weiter?"
+          "The most expensive parts of a Formula 1 car is the engine and its related components. You might expect F1 cars to cost a team around 10 million pounds. The team also needs to pay for the best drivers such as Lewis Hamilton, Alonso, or Sebastian Vettel. An educated guess might put the total figure near to 50 million pounds."
       },
       {
-        title: "Curabitur laoreet, mauris vel blandit fringilla",
+        title: "When was the First Formula One Race?",
         content:
-          "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc"
+          "The origins of Formula 1 racing date back to the 1920s in Europe. F1 originated from other similar motor racing competitions. The FIA standardized the rules of car racing in 1946. That formed the basis for the modern rules of Formula One racing. The 13th of May in 1950 saw the inaugural Formula One World Drivers' championship. The race at Silverstone in Great Britain became the first event date of the first world championship series."
       },
       {
-        title: "What is the package version",
-        content: "v1.0.5"
+        title: "How many Grand Prix Races are there in a Season?",
+        content: "There have been a varying number of Grands Prix over the seasons. The 1950 season had 7 separate Grand Prix races and has increased ever since. As a rule, you will now be able to watch a different Grand Prix twenty times in each season."
       },
       {
-        title: "Wie sollen wir arbeiten",
-        content: "Ich habe auch keine Ahnung"
+        title: "How many Cars in Formula 1 Race?",
+        content: "Each of the 10 teams can have two cars to compete in the F1 World Championship. That means a total of 20 cars can enter the competition. Even so, FIA sporting regulations in fact allow a maximum limit of 26 cars for the championship."
       }
     ]
   };

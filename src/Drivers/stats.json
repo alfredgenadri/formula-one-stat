@@ -2,7 +2,6 @@
     {
         "Reference": "hamilton",
         "Image": "hamilton-stats.png",
-        "Racecar": "hamilton-car.jpeg",
         "Country Image": "uk.jpeg",
         "Team Image": "mercedes-logo.png",
         "Driver": "Lewis Hamilton",
@@ -29,6 +28,9 @@
     },
     {
         "Reference": "bottas",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Valtteri Bottas",
       "Number": 77,
       "Team": "Mercedes",
@@ -46,10 +48,16 @@
         "Overtakes": 18,
         "Beat Teammate Rate": 0.82,
         "Top 5 Scorer": 0.18,
-        "Price": 9.7
+        "Price": 9.7,
+        "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1
     },
     {
-        "Reference": "verstappen",
+      "Reference": "verstappen",
+      "Image": "verstappen-stats.png",
+      "Country Image": "dutch.png",
+      "Team Image": "redbull-logo.png",
       "Driver": "Max Verstappen",
       "Number": 33,
       "Team": "Red Bull Racing",
@@ -67,10 +75,16 @@
         "Overtakes": -14,
         "Beat Teammate Rate": 0.64,
         "Top 5 Scorer": 0.73,
-        "Price": 30.4
+        "Price": 30.4,
+        "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1
     },
     {
         "Reference": "leclerc",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Charles Leclerc",
       "Number": 16,
       "Team": "Ferrari",
@@ -88,10 +102,16 @@
         "Overtakes": 2,
         "Beat Teammate Rate": 0.55,
         "Top 5 Scorer": 0.64,
-        "Price": 18.8
+        "Price": 18.8,
+        "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1
     },
     {
         "Reference": "vettel",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Sebastian Vettel",
       "Number": 5,
       "Team": "Ferrari",
@@ -109,10 +129,16 @@
         "Overtakes": 27,
         "Beat Teammate Rate": 0.55,
         "Top 5 Scorer": 0.00,
-        "Price": 11.4
+        "Price": 11.4,
+        "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1
     },
     {
         "Reference": "sainz",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Carlos Sainz",
       "Number": 55,
       "Team": "McLaren",
@@ -130,10 +156,16 @@
         "Overtakes": 6,
         "Beat Teammate Rate": 0.36,
         "Top 5 Scorer": 0.64,
-        "Price": 17.3
+        "Price": 17.3,
+        "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1
     },
     {
         "Reference": "gasly",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Pierre Gasly",
       "Number": 10,
       "Team": "Toro Rosso",
@@ -151,10 +183,16 @@
         "Overtakes": 13,
         "Beat Teammate Rate": 0.55,
         "Top 5 Scorer": 0.09,
-        "Price": 12.9
+        "Price": 12.9,
+        "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1
     },
     {
         "Reference": "albon",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Alexander Albon",
       "Number": 23,
       "Team": "Red Bull Racing",
@@ -166,10 +204,22 @@
       "Highest Race Finish": "4(x1)",
       "Highest Grid Position": 5,
       "Date of Birth": "23/03/1996",
-      "Place of Birth": "London, England"
+      "Place of Birth": "London, England",
+      "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1,
+        "DNFs": 0,
+        "DNF Rate": 0.00,
+        "Overtakes": 22,
+        "Beat Teammate Rate": 0.36,
+        "Top 5 Scorer": 0.55,
+        "Price": 30.1
     },
     {
         "Reference": "ricciardo",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Daniel Ricciardo",
       "Number": 3,
       "Team": "Renault",
@@ -181,10 +231,22 @@
       "Highest Race Finish": "1(x7)",
       "Highest Grid Position": 1,
       "Date of Birth": "01/07/1989",
-      "Place of Birth": "Perth, Australia"
+      "Place of Birth": "Perth, Australia",
+      "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1,
+        "DNFs": 0,
+        "DNF Rate": 0.00,
+        "Overtakes": 22,
+        "Beat Teammate Rate": 0.36,
+        "Top 5 Scorer": 0.55,
+        "Price": 30.1
     },
     {
         "Reference": "perez",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Sergio Perez",
       "Number": 11,
       "Team": "Racing Point",
@@ -196,10 +258,21 @@
       "Highest Race Finish": "2(x2)",
       "Highest Grid Position": 4,
       "Date of Birth": "26/01/1990",
-      "Place of Birth": "Guadalajara, Mexico"
+      "Place of Birth": "Guadalajara, Mexico",
+      "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1,"DNFs": 0,
+        "DNF Rate": 0.00,
+        "Overtakes": 22,
+        "Beat Teammate Rate": 0.36,
+        "Top 5 Scorer": 0.55,
+        "Price": 30.1
     },
     {
         "Reference": "norris",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Lando Norris",
       "Number": 4,
       "Team": "McLaren",
@@ -211,10 +284,22 @@
       "Highest Race Finish": "6(x2)",
       "Highest Grid Position": 5,
       "Date of Birth": "13/11/1999",
-      "Place of Birth": "Bristol, England"
+      "Place of Birth": "Bristol, England",
+      "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1,
+        "DNFs": 0,
+        "DNF Rate": 0.00,
+        "Overtakes": 22,
+        "Beat Teammate Rate": 0.36,
+        "Top 5 Scorer": 0.55,
+        "Price": 30.1
     },
     {
         "Reference": "stroll",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Lance Stroll",
       "Number": 18,
       "Team": "Racing Point",
@@ -226,10 +311,22 @@
       "Highest Race Finish": "3(x1)",
       "Highest Grid Position": 2,
       "Date of Birth": "29/10/1998",
-      "Place of Birth": "Montreal, Canada"
+      "Place of Birth": "Montreal, Canada",
+      "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1,
+        "DNFs": 0,
+        "DNF Rate": 0.00,
+        "Overtakes": 22,
+        "Beat Teammate Rate": 0.36,
+        "Top 5 Scorer": 0.55,
+        "Price": 30.1
     },
     {
         "Reference": "magnussen",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "Kevin Magnussen",
       "Number": 20,
       "Team": "Haas",
@@ -241,10 +338,21 @@
       "Highest Race Finish": "2(x1)",
       "Highest Grid Position": 4,
       "Date of Birth": "05/10/1992",
-      "Place of Birth": "Roskilde, Denmark"
+      "Place of Birth": "Roskilde, Denmark",
+      "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1,"DNFs": 0,
+        "DNF Rate": 0.00,
+        "Overtakes": 22,
+        "Beat Teammate Rate": 0.36,
+        "Top 5 Scorer": 0.55,
+        "Price": 30.1
     },
     {
         "Reference": "russell",
+        "Image": "hamilton-stats.png",
+        "Country Image": "uk.jpeg",
+        "Team Image": "mercedes-logo.png",
       "Driver": "George Russell",
       "Number": 63,
       "Team": "Williams",
@@ -256,6 +364,15 @@
       "Highest Race Finish": "11(x1)",
       "Highest Grid Position": 14,
       "Date of Birth": "15/02/1998",
-      "Place of Birth": "King's Lynn, England"
+      "Place of Birth": "King's Lynn, England",
+      "Wins": 26,
+        "Racing Streak": 3,
+        "Qualifying Streak": 1,
+        "DNFs": 0,
+        "DNF Rate": 0.00,
+        "Overtakes": 22,
+        "Beat Teammate Rate": 0.36,
+        "Top 5 Scorer": 0.55,
+        "Price": 30.1
     }
    ]

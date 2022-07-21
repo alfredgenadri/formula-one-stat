@@ -97,6 +97,9 @@ class MyCalendar extends React.Component {
   render() {
     return (
       <div className="pt-4">
+        <h1 className='pt-3' style={{textAlign: "center", color: "rgb(225, 6, 0)"}}>Race Calendar</h1>
+        <hr style={{width: "30%", margin: "0 auto", border: "none", height: "1px", backgroundColor: "#333"}}></hr>
+        <div className="pb-4"></div>
         <Calendar
           dataSource={this.state.dataSource}
           style={{ style: "custom" }}

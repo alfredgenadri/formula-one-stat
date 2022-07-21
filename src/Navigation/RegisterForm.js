@@ -39,6 +39,11 @@ function BigTest() {
   }));
   }
 
+  const title = <div>
+            <h1 className='pt-3' style={{textAlign: "center", color: "rgb(225, 6, 0)"}}>Register</h1>
+            <hr style={{width: "30%", margin: "0 auto", border: "none", height: "1px", backgroundColor: "#333"}}></hr>
+          </div>
+
 
 // javascript switch case to show different form in each step
   switch (step) {
@@ -46,6 +51,7 @@ function BigTest() {
     case 1:
       return (
         <div className="App">
+          {title}
           <Container>
             <Row>
               <Col  md={{ span: 6, offset: 3 }} className="custom-margin">
@@ -59,6 +65,7 @@ function BigTest() {
     case 2:
       return (
         <div className="App">
+          {title}
           <Container>
             <Row>
               <Col  md={{ span: 6, offset: 3 }} className="custom-margin">
@@ -72,6 +79,7 @@ function BigTest() {
     case 3:
       return (
         <div className="App">
+          {title}
           <Container>
             <Row>
               <Col  md={{ span: 6, offset: 3 }} className="custom-margin">
