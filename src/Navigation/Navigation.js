@@ -18,6 +18,7 @@ const Navigation = () => {
             <Navbar className="color-nav" variant="light">
                 <Container>
                     <Navbar.Brand>
+                        <Link to="/formula-one-stat">
                     <img
                         alt=""
                         src={images['logo.png']}
@@ -25,17 +26,18 @@ const Navigation = () => {
                         height="50"
                         className="d-inline-block align-top"
                         />{' '}
+                    </Link>
                         
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link><Link to="/drivers" className='nav-link'>Drivers & Teams</Link></Nav.Link>
-                        <Nav.Link><Link to="/articles" className='nav-link'>Latest News</Link></Nav.Link>
-                        <Nav.Link><Link to="/calendar" className='nav-link'>Calendar</Link></Nav.Link>
-                        <Nav.Link><Link to="/game" className='nav-link'>Memory</Link></Nav.Link>
-                        <Nav.Link><Link to="/faq" className='nav-link'>FAQ</Link></Nav.Link>
+                        <Nav.Link><Link to="/formula-one-stat/drivers" className='nav-link'>Drivers & Teams</Link></Nav.Link>
+                        <Nav.Link><Link to="/formula-one-stat/articles" className='nav-link'>Latest News</Link></Nav.Link>
+                        <Nav.Link><Link to="/formula-one-stat/calendar" className='nav-link'>Calendar</Link></Nav.Link>
+                        <Nav.Link><Link to="/formula-one-stat/game" className='nav-link'>Memory</Link></Nav.Link>
+                        <Nav.Link><Link to="/formula-one-stat/faq" className='nav-link'>FAQ</Link></Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link><Button><Link to="/register">Register</Link></Button></Nav.Link>
+                        <Nav.Link><Button><Link to="/formula-one-stat/register">Register</Link></Button></Nav.Link>
                         <Nav.Link><LoginModal /></Nav.Link>
                     </Nav>
                 </Container>

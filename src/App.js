@@ -36,35 +36,35 @@ export default function App() {
         <Navigation />
         <Switch>
           
-          <Route exact path="/" >
+          <Route exact path="/formula-one-stat/" >
               <Main />
           </Route>
 
-          <Route path={"/drivers/:driver" + driver_names()}>
+          <Route path={"/formula-one-stat/drivers/:driver" + driver_names()}>
             <Driver />
           </Route>
 
-          <Route path="/drivers" exact={true}>
+          <Route path="/formula-one-stat/drivers" exact={true}>
               <Drivers />
           </Route>
 
-          <Route path="/articles">
+          <Route path="/formula-one-stat/articles">
               <Articles />
           </Route>
 
-          <Route path="/register">
+          <Route path="/formula-one-stat/register">
               <RegisterForm />
           </Route>
 
-          <Route path="/calendar">
+          <Route path="/formula-one-stat/calendar">
             <MyCalendar />
           </Route>
 
-          <Route path="/faq">
+          <Route path="/formula-one-stat/faq">
             <FAQ />
           </Route>
 
-          <Route path="/game">
+          <Route path="/formula-one-stat/game">
             <Game />
           </Route>
 

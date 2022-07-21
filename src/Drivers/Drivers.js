@@ -22,8 +22,8 @@ const Drivers = () => {
             <Card.Title><img src={images[team.team_img]} className="team-logo"></img></Card.Title>
             <Card.Title style={{color:'white'}} className='text-center'>{team.team}</Card.Title>
                 <Row>
-                    <Col><Link to={"/drivers/" + team.driver1_name}><Card.Img src={images[team.driver1_img]} /></Link></Col>
-                    <Col><Link to={"/drivers/" + team.driver2_name}><Card.Img src={images[team.driver2_img]} /></Link></Col>
+                    <Col><Link to={"/formula-one-stat/drivers/" + team.driver1_name}><Card.Img src={images[team.driver1_img]} /></Link></Col>
+                    <Col><Link to={"/formula-one-stat/drivers/" + team.driver2_name}><Card.Img src={images[team.driver2_img]} /></Link></Col>
                 </Row>
             </Card>
             </Col>
