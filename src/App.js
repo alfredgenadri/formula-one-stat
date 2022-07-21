@@ -39,7 +39,7 @@ export default function App() {
           
           <Route exact path="/" element={<Main/>}></Route>
 
-          <Route path={"/drivers/:driver" + driver_names()} element={<Driver />}>
+          <Route exact path="/drivers/:driver" element={<Driver/>}>
           </Route>
 
           <Route path="/drivers" element={<Drivers/>}>

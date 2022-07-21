@@ -44,7 +44,6 @@ export default function Driver(){
     let {driver} = useParams();
     let driver_stats = match(driver);
 
-    console.log(driver);
 
     return (  
         
