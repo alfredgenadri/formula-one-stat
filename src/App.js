@@ -32,39 +32,40 @@ export default function App() {
 
     <div>
       
-      <Router forceRefresh={true}>
+      <Router forceRefresh={true} basename="/formula-one-stat">
+              
         <Navigation />
         <Switch>
           
-          <Route exact path="/formula-one-stat/" >
+          <Route exact path="/" >
               <Main />
           </Route>
 
-          <Route path={"/formula-one-stat/drivers/:driver" + driver_names()}>
+          <Route path={"/drivers/:driver" + driver_names()}>
             <Driver />
           </Route>
 
-          <Route path="/formula-one-stat/drivers" exact={true}>
+          <Route path="/drivers" exact={true}>
               <Drivers />
           </Route>
 
-          <Route path="/formula-one-stat/articles">
+          <Route path="/articles">
               <Articles />
           </Route>
 
-          <Route path="/formula-one-stat/register">
+          <Route path="/register">
               <RegisterForm />
           </Route>
 
-          <Route path="/formula-one-stat/calendar">
+          <Route path="/calendar">
             <MyCalendar />
           </Route>
 
-          <Route path="/formula-one-stat/faq">
+          <Route path="/faq">
             <FAQ />
           </Route>
 
-          <Route path="/formula-one-stat/game">
+          <Route path="/game">
             <Game />
           </Route>
 
